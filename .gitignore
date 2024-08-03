@@ -1,0 +1,10 @@
+# Ignore env files
+spotify-playlist-terraform/.env
+
+# Ignore terraform state and terraform provider files
+spotify-playlist-terraform/terraform/.terraform
+spotify-playlist-terraform/terraform/terraform.tfvars
+*.tfstate
+*.tfstate*
+spotify-playlist-terraform/terraform/*terraform*
+
