@@ -1,10 +1,12 @@
 # Spotify playlist via Terraform
 
-### Tutorials for inspiration here:
+### Inspiration here:
 https://developer.hashicorp.com/terraform/tutorials/community-providers/spotify-playlist
 
 
-### ENV Variables
+## Steps: 
+
+### Set Environment Variables
 Set the environment variables by getting values [here](https://developer.spotify.com/dashboard)
 
 ```
@@ -12,3 +14,17 @@ export SPOTIFY_CLIENT_REDIRECT_URI=http://localhost:27228/spotify_callback
 export SPOTIFY_CLIENT_ID=
 export SPOTIFY_CLIENT_SECRET=
 ```
+
+## Run docker command
+Ensure docker is installed
+`docker run --rm -it -p 27228:27228 --env-file ./.env ghcr.io/conradludgate/spotify-auth-proxy`
+
+You'll get API key after successful authorization.
+![API key](assets/api-key.png)
+
+
+## Run Terraform commands
+ Terraform init `terraform init`
+ Terraform plan `terraform plan`
+ Terraform apply 
+  [apply](assets/terraform-apply.png)
