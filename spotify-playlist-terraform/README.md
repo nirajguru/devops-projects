@@ -24,7 +24,9 @@ You'll get API key after successful authorization.
 
 
 ## Run Terraform commands
- Terraform init `terraform init` to download the provider files
- Terraform plan `terraform plan` to check the resources that Terraform is going to create
+ Terraform init `terraform init` to download the provider files.
+
+ Terraform plan `terraform plan` to check the resources that Terraform is going to create.
+
  Terraform apply `terraform apply` to create the resources shown in the plan
-  [apply](assets/terraform-apply.png)
+  ![apply](assets/terraform-apply.png)
